@@ -50,3 +50,17 @@ if(message.value == ""){
 
 }
 
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "alienramzi@gmail.comname",
+        Password : "password",
+        To : 'adrian-alien@o2.pl',
+        From : document.My_contact_form.email,
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
+
