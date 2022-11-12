@@ -1,0 +1,79 @@
+*,*::after,*::before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    font-size: 16px;
+    margin: 0px;
+    background: #121313;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1{
+    font-weight: bolder;
+    color: #333;
+    font-size: 100px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+h1 > span:hover{
+    color: aliceblue;
+    text-shadow: 0 0 10px aliceblue,
+                 0 0 20px aliceblue,
+                 0 0 40px aliceblue,
+                 0 0 80px aliceblue,
+                 0 0 160px aliceblue,
+}
+ .form_box{
+    width: 600px;
+    background: rgb(33, 33, 33) ;
+    padding: 30px;
+    border-radius: 10px;
+ }
+ .input-row{
+    position: relative;
+    margin-bottom: 13px;
+ }
+ .form_box input:not([type="submit"]),
+ .form_box textarea,
+ .form_box select{
+    width: 100%;
+    margin: 0,0,3px;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(33, 32, 32);
+    border-radius: 20px;
+    border: 1px solid transparent;
+ }
+ .form_box textarea{
+    height: 100px;
+ }
+ .form_box input[type="submit"]{
+    padding: 10px 30px;
+    font-size: 20px;
+    color: rgb(207, 191, 191);
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    width: 70%;
+    display: block;
+    margin: auto;
+    background: rgb(15, 15, 15);
+ }
+ .form_box input[type="submit"]:hover{
+    background: rgb(67, 67, 67);
+ }
+.error{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: red;
+    display: none;
+}
