@@ -1,5 +1,5 @@
 function validForm(){
-alert("Fill in all fields")
+
 
 var name = document.My_contact_form.name;
 var email = document.My_contact_form.email;
