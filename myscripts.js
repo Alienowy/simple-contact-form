@@ -1,5 +1,4 @@
-
-
+function validForm(){
 
 var name = document.My_contact_form.name;
 var email = document.My_contact_form.email;
