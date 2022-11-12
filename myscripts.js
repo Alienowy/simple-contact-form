@@ -1,4 +1,4 @@
-function validForm(){
+
 
 
 var name = document.My_contact_form.name;
