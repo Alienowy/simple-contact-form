@@ -49,9 +49,9 @@ if(message.value == ""){
 }
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "alienramzi@gmail.com",
+        Username : "alienadrianwas@gmail.com",
         Password : "(Kitek29Kitek)",
-        To : 'alienramzi@gmail.comname',
+        To : 'alienramzi@gmail.com',
         From : document.My_contact_form.email,
         Subject : "This is the subject",
         Body : "And this is the body"
