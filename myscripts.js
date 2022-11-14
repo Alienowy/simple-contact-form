@@ -1,4 +1,4 @@
-function validForm(){
+function sendEmail(){
 
 var name = document.My_contact_form.name;
 var email = document.My_contact_form.email;
@@ -47,15 +47,11 @@ if(message.value == ""){
     message.nextElementSibling.style.display = "none";
     message.style.border = "1px solid transparent";   
 }
-
-}
-
-function sendEmail(){
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "alienramzi@gmail.comname",
-        Password : "password",
-        To : 'adrian-alien@o2.pl',
+        Username : "alienramzi@gmail.com",
+        Password : "(Kitek29Kitek)",
+        To : 'alienramzi@gmail.comname',
         From : document.My_contact_form.email,
         Subject : "This is the subject",
         Body : "And this is the body"
