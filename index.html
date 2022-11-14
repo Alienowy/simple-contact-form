@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <h1 id="alight"><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span></h1>
-        <form name="My_contact_form" onsubmit="sendEmail(); reset(); return false;" >
+        <form name="My_contact_form" onsubmit="return validEmail(); sendEmail(); reset(); return false;" >
             <div class="form_box">
                 <div class="input-row">
                     <input type="text" placeholder="Name*" name="name">
@@ -38,7 +38,6 @@
                 </div>
             </div>
         </form>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </div>
 </body>
 </html>
