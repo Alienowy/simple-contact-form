@@ -1,9 +1,9 @@
 <?php
-if(isset($_POST['contact_btn'])){
+if(isset($_POST['submit'])){
     $name=$_POST['name'];
     $email=$_POST['email'];
     $phone=$_POST['phone'];
-    $submit=$_POST['submit'];
+    $subject=$_POST['subject'];
     $message=$_POST['message'];
     $to="alienramzi@gmail.com";
     $header="from:$email";
@@ -53,7 +53,7 @@ if(isset($_POST['contact_btn'])){
                     <span class="error">Please type your message.</span>
                 </div>
                 <div id="Send" class="input-row">
-                    <input type="submit" value="SEND">
+                    <input type="submit" name="submit" value="SEND">
                 </div>
             </div>
         </form>
